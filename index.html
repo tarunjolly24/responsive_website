@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7c8d696a82.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<script>
+    $(document).ready(function(){
+        console.log("helo")
+        $('#select').on('click',function(){
+            console.log(1)
+            $(".aside-bar").removeClass("close");
+            
+            $(".aside-bar").addClass("open");
+            // $(".aside-bar ul").addClass("open");
+            
+            // $('#select').addClass("close");
+            // console.log('done')
+
+        })
+
+        $("#cross").on('click',function(){
+            $(".aside-bar").removeClass("open");
+            
+            $(".aside-bar").addClass("close");
+        })
+
+
+
+});
+</script>
+<body>
+    <div class="aside-bar close">
+        <span style="float: right;margin: 10px;color: white;" id="cross">x</span>
+        <div class="clr"></div>
+        <ul>
+            
+            <li>Home</li>
+            <li>Generic</li>
+            <li>Elements</li>
+        </ul>
+    </div>
+
+    <div class="div-header-wrapper">
+        <div class="navbar-wrapper">
+            <div class="navbar">
+                <div class="navbar-content-left">
+                    Responsive Layout
+                </div>
+                <div class="navbar-content-right">
+                    <span>Home</span>
+                    <span>Generic</span>
+                    <span>Elements</span>
+                    <i class="fas fa-bars" id="select"></i>
+                   
+                
+                </div>
+            </div>
+            <hr class="navbar-line">
+
+        </div>
+
+        <div class="div-welcome-wrapper">
+            <div class="div-welcome-content">
+                <h2>Welcome</h2>
+                <div class="div-choose-category">
+                    <div class="div-travel">
+                        <p><i class="fas fa-car" style="font-size:24px;color:#6DC393;"></i></p>
+                        <p>Travel</p>
+                        <p>Choose a ride</p>
+                    </div>
+                    <div class="div-camera">
+                        <p><i class="fas fa-camera" style="font-size:24px;color:#6DC393;"></i></p>
+                        <p>Travel</p>
+                        <p>Choose a ride</p>
+                    </div>
+
+                </div>
+                <button class="welcome-btn">GET STARTED</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="div-card-wrapper">
+        <div class="cards" id="card-1" >
+            <img class="card-img" src="./assessts/img/iphone.jpeg" alt="iphone" ><br>
+            <h3 >Lorem ipsum dolor sit amet.</h3><br>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus, harum adipisci quam dolorem modi?</p><br>
+            <button type="button" class="welcome-btn" >LEARN MORE</button>
+        </div>
+        <div class="cards" id="card-2">
+            <img class="card-img" src="./assessts/img/camera.jpg" alt="iphone" ><br>
+            <h3 >Lorem ipsum dolor sit amet.</h3><br>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti natus, harum adipisci quam dolorem modi?</p><br>
+            <button type="button" class="welcome-btn" >LEARN MORE</button>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
