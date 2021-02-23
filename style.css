@@ -155,7 +155,7 @@
     .cards{
         display: block;
         padding-bottom: 2rem;
-        width: 100%;
+        width: 50%;
         margin: 0 auto;
     }
     .navbar-wrapper{
@@ -173,7 +173,12 @@
         border: none;
         padding: 0px;
     }
-    
+    .cards{
+        display: block;
+        padding-bottom: 2rem;
+        width: 100%;
+        margin: 0 auto;
+    }
     .div-camera{
         display: block;
         padding-left: 0px;
