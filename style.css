@@ -149,11 +149,13 @@
     .aside-bar ul{display: block;} */
 
     .div-card-wrapper{
+        color: gray;
         display: block;
     }
     .cards{
         display: block;
-        width: 50%;
+        padding-bottom: 2rem;
+        width: 100%;
         margin: 0 auto;
     }
     .navbar-wrapper{
